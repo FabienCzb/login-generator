@@ -20,7 +20,13 @@ public class LoginGeneratorTest {
         LoginGenerator logGen = new LoginGenerator(logServ);
 
         // When
+
+        // Then
         // Creation d'une personne et ajout au login
         assertEquals("PDUR",logGen.generateLoginForNomAndPrenom("Durand","Paul"));
+
+        // Then
+        // Ajount d'une personne ayant un login déjà existant
+        assertEquals("JRAL2",logGen.generateLoginForNomAndPrenom("Ralling","John"));
     }
 }
