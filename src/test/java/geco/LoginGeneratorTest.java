@@ -21,6 +21,6 @@ public class LoginGeneratorTest {
 
         // When
         // Creation d'une personne et ajout au login
-        assertEquals("PDUP",logGen.generateLoginForNomAndPrenom("Dupond","Paul"));
+        assertEquals("PDUR",logGen.generateLoginForNomAndPrenom("Durand","Paul"));
     }
 }
