@@ -26,7 +26,11 @@ public class LoginGeneratorTest {
         assertEquals("PDUR",logGen.generateLoginForNomAndPrenom("Durand","Paul"));
 
         // Then
-        // Ajount d'une personne ayant un login déjà existant
+        // Ajout d'une personne ayant un login déjà existant
         assertEquals("JRAL2",logGen.generateLoginForNomAndPrenom("Ralling","John"));
+
+        // Then
+        // Ajout d'une personne avec un login cours
+        assertEquals("PDU",logGen.generateLoginForNomAndPrenom("Du","Paul"));
     }
 }
